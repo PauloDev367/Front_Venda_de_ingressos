@@ -1,0 +1,146 @@
+:root {
+  --azul: #387ADF;
+  --preto: #000;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+#faq,
+#contato,
+#todos-ingressos,
+#promos,
+#chamada {
+  padding: 40px 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.cta a {
+  display: inline-block;
+  background-color: #82cd47;
+  color: #fff;
+  text-align: center;
+  padding: 10px 15px;
+  border: 2px solid #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.cta a:hover {
+  scale: 1.03;
+  color: #fff;
+  text-decoration: none;
+}
+
+.modal-open .modal {
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.col-12 {
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.6rem !important;
+  margin-bottom: 0 !important;
+}
+
+.table th,
+.table td {
+  text-wrap: nowrap;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+
+.text-sm {
+  font-size: .8rem;
+}
+
+.checkbox-wrapper-3 input[type="checkbox"] {
+  visibility: hidden;
+  display: none;
+}
+
+.checkbox-wrapper-3 .toggle {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0);
+}
+
+.checkbox-wrapper-3 .toggle:before {
+  content: "";
+  position: relative;
+  top: 3px;
+  left: 3px;
+  width: 34px;
+  height: 14px;
+  display: block;
+  background: #9a9999;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.checkbox-wrapper-3 .toggle span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(154, 153, 153, 0.5);
+  transition: all 0.2s ease;
+}
+
+.checkbox-wrapper-3 .toggle span:before {
+  content: "";
+  position: absolute;
+  display: block;
+  margin: -18px;
+  width: 56px;
+  height: 56px;
+  background: rgba(56, 223, 128, 0.5);
+  border-radius: 50%;
+  transform: scale(0);
+  opacity: 1;
+  pointer-events: none;
+}
+
+.checkbox-wrapper-3 #cbx-3:checked+.toggle:before,
+.checkbox-wrapper-3 #cbx-5:checked+.toggle:before,
+.checkbox-wrapper-3 #cbx-4:checked+.toggle:before {
+  background: #38c628;
+}
+
+.checkbox-wrapper-3 #cbx-3:checked+.toggle span ,
+.checkbox-wrapper-3 #cbx-5:checked+.toggle span ,
+.checkbox-wrapper-3 #cbx-4:checked+.toggle span {
+  background: rgb(16, 78, 25);
+  transform: translateX(20px);
+  transition: all 0.2s cubic-bezier(0.8, 0.4, 0.3, 1.25), background 0.15s ease;
+  box-shadow: 0 3px 8px rgba(79, 46, 220, 0.2);
+}
+
+.checkbox-wrapper-3 #cbx-3:checked+.toggle span:before ,
+.checkbox-wrapper-3 #cbx-5:checked+.toggle span:before ,
+.checkbox-wrapper-3 #cbx-4:checked+.toggle span:before {
+  transform: scale(1);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
