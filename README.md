@@ -1,24 +1,45 @@
-# frontend
+# Sistema de Venda de Ingressos - Front-End
 
-## Project setup
+Este projeto foi desenvolvido com fins de estudo e tem como objetivo ser apresentado no congresso da universidade FEPI de Itajubá, MG.
+
+## Executando com Docker
+
+### Pré-requisitos
+Certifique-se de ter instalado em sua máquina:
+- Docker
+- Docker Compose
+
+### Passos para execução
+1. Abra o terminal no diretório do projeto.
+2. Execute o comando:
+    ```
+    docker-compose up -d
+    ```
+
+O sistema estará disponível em: [http://localhost:8080](http://localhost:8080)
+
+### Parando o container
+Para parar o container, execute:
 ```
-npm install
+docker-compose down
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Executando com Node.js
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Pré-requisitos
+Certifique-se de ter instalado em sua máquina:
+- Node.js (versão 18.x)
+- NPM (versão 10.5.0)
 
-### Lints and fixes files
-```
-npm run lint
-```
+### Passos para execução
+1. Abra o terminal no diretório do projeto.
+2. Instale as dependências do projeto com:
+    ```
+    npm install
+    ```
+3. Inicie o servidor com:
+    ```
+    npm run serve
+    ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/)
+O sistema estará disponível em: [http://localhost:8080](http://localhost:8080)
